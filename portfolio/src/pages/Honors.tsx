@@ -1,7 +1,9 @@
+import PDFViewer from '@/common/PDFViewer'
+
 export function Honors() {
     return (
-        <div>
-            <h1>This is the honors project page</h1>
+        <div className="grid gap-10 grid-cols-3 flex-grow mx-4">
+            <PDFViewer />
         </div>
     )
 }
