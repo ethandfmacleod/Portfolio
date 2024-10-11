@@ -66,7 +66,7 @@ export function NavMenu() {
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Link to="/">
+                        <Link to="https://github.com/ethandfmacleod">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 GitHub
                             </NavigationMenuLink>
