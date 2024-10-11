@@ -4,6 +4,7 @@ const documents: string[] = ["/documents/Dissertation.pdf", "/documents/Literatu
 
 const PDFViewer = () => {
     const [selectedDocument, setDocument] = useState(0);
+    setDocument(0);
 
     return (
         <div>
