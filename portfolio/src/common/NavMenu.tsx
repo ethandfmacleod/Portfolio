@@ -6,39 +6,10 @@ import { ListItem } from "./NavMenuListItem";
 // Navigation Menu dropdown items
 const components: { title: string; href: string; description: string }[] = [
     {
-        title: "Alert Dialog",
-        href: "/docs/primitives/alert-dialog",
+        title: "Honors Project Work",
+        href: "/honors",
         description:
-            "A modal dialog that interrupts the user with important content and expects a response.",
-    },
-    {
-        title: "Hover Card",
-        href: "/docs/primitives/hover-card",
-        description:
-            "For sighted users to preview content available behind a link.",
-    },
-    {
-        title: "Progress",
-        href: "/docs/primitives/progress",
-        description:
-            "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    },
-    {
-        title: "Scroll-area",
-        href: "/docs/primitives/scroll-area",
-        description: "Visually or semantically separates content.",
-    },
-    {
-        title: "Tabs",
-        href: "/docs/primitives/tabs",
-        description:
-            "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-        title: "Tooltip",
-        href: "/docs/primitives/tooltip",
-        description:
-            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+            "A compilation of documents made for my honors project.",
     },
 ]
 
@@ -48,7 +19,7 @@ export function NavMenu() {
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+                        <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
                         <NavigationMenuContent className="w-80">
                             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <li className="row-span-3">
@@ -58,11 +29,10 @@ export function NavMenu() {
                                             href="/"
                                         >
                                             <div className="mb-2 mt-4 text-lg font-medium">
-                                                shadcn/ui
+                                                Pinch Analysis
                                             </div>
                                             <p className="text-sm leading-tight text-muted-foreground">
-                                                Beautifully designed components built with Radix UI and
-                                                Tailwind CSS.
+                                                My magnum opus: The Pinch Analysis System
                                             </p>
                                         </a>
                                     </NavigationMenuLink>
@@ -80,7 +50,7 @@ export function NavMenu() {
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+                        <NavigationMenuTrigger>Other</NavigationMenuTrigger>
                         <NavigationMenuContent>
                             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                                 {components.map((component) => (
@@ -98,7 +68,7 @@ export function NavMenu() {
                     <NavigationMenuItem>
                         <Link to="/">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                Documentation
+                                GitHub
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
