@@ -7,7 +7,7 @@ export const Layout = () => {
     return (
         <div className="flex flex-col min-h-screen mx-2 md:mx-20">
             <NavBar />
-            <main className="flex-grow py-3">
+            <main className="flex-grow pt-3 pb-9">
                 <Outlet />
             </main>
             <Footer />
