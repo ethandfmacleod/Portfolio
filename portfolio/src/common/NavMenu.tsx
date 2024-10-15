@@ -21,7 +21,7 @@ export function NavMenu() {
                     <NavigationMenuItem>
                         <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
                         <NavigationMenuContent className="w-80">
-                            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                            <ul className="grid gap-3 p-4 grid-cols-1 w-[200px] md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <li className="row-span-3">
                                     <NavigationMenuLink asChild>
                                         <a

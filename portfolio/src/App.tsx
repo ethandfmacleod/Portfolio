@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./pages/Layout";
 import { Home } from "./pages/Home";
-import { Honors } from "./pages/Honors";
+import Honors from "./pages/Honors";
 import { ThemeProvider } from "./components/theme-provider";
 
 function App() {
