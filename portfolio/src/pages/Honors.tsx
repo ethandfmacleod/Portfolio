@@ -18,7 +18,14 @@ function Honors() {
     const [selectedDocument, setSelectedDocument] = useState(0);
 
     return (
-        <div className='flex flex-col gap-8 md:flex-row md:gap-12'>
+        <>
+        {/* Message for small screens */}
+        <div className="border-4 block md:hidden text-center p-4 rounded-md">
+            Online PDF viewing cannot be done on mobile, visit the <a href="https://github.com/ethandfmacleod/Honours" className="underline text-blue-200">GitHub repository</a> to view the content.
+        </div>
+
+        {/* Content for medium or larger screens */}
+        <div className='hidden md:flex flex-col gap-8 md:flex-row md:gap-12'>
             <div className='w-full md:w-6/12'>
                 <PDFViewer document={documents[selectedDocument]} />
             </div>
@@ -37,8 +44,8 @@ function Honors() {
                     <DownloadFileButton text="Literature Review" href="/zips/LiteratureReview.zip" file="LiteratureReview.zip" />
                 </div>
             </div>
-
         </div>
+        </>
     )
 }
 
